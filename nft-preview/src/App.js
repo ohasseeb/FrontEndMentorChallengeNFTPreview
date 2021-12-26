@@ -5,8 +5,7 @@ import "./App.css";
 const App = () => {
   return (
     <div>
-      Hello world
-      <NFTPreview/>
+      <NFTPreview />
     </div>
   );
 };

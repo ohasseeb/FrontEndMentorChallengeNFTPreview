@@ -1,0 +1,43 @@
+.outer-image {
+  display: flex;
+  justify-content: center;
+}
+
+.outside-card {
+  //   border: 1em;
+  border-radius: 1em;
+  border: dashed white;
+  background-color: hsl(216, 50%, 16%);
+  width: 31%;
+
+  .image {
+    width: 50%;
+  }
+}
+
+.last-row {
+  color: white;
+}
+.avatar {
+  width: 2em;
+  border: solid white;
+  border-radius: 3em;
+  border-width: 1px;
+}
+.main-text {
+  color: white;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.sub-text {
+  color: rgb(150, 172, 203);
+  font-weight: 300;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+}

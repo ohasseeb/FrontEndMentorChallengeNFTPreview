@@ -2,29 +2,30 @@ import React from "react";
 import { ReactComponent as ClockSVG } from "./icon-clock.svg";
 import { ReactComponent as EthSVG } from "../images/icon-ethereum.svg";
 import "./nft-preview.styles.scss";
-import clock from "./image-avatar.png";
+import avatar from "./image-avatar.png";
 import equilibrium from "../images/image-equilibrium.jpg";
 
 const NFTPreview = () => {
   return (
     <div className="outside-card">
-      <div>
-        <img classname="image" src={equilibrium} />
+      <div className="outer-image">
+        <img className="image" src={equilibrium} />
       </div>
 
       <div className="title">Equilibrium #3429</div>
-      <div className="description">
+      <span className="description sub-text">
         {" "}
-        Our Equilibrium collection promotes balance and calm.
-      </div>
+        Our Equilibrium collection promotes
+      </span>
+      <span className="sub-text"> balance and calm.</span>
 
       <div className=" bottom-row">
-        <span>
+        <span className="eth">
           {" "}
           <EthSVG />
-          0.041 Eth{" "}
+          0.041 ETH{" "}
         </span>
-        <span>
+        <span className="time">
           {" "}
           <ClockSVG />3 days left
         </span>
@@ -32,8 +33,11 @@ const NFTPreview = () => {
 
       <div>___________________________</div>
 
-      <span> Creation of </span>
-      <span>Jules Wyvern</span>
+      <div className="last-row">
+        <img className="avatar" src={avatar} />
+        <span className="sub-text"> Creation of </span>
+        <span className="main-text"> Jules Wyvern</span>
+      </div>
     </div>
   );
 };
